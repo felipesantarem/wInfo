@@ -5,13 +5,11 @@
 #include "./network.h"
 #include "./sysinfo.h"
 
-void batteryStatus(void);
-
 int main() {
     cout << "Select one operation:" << endl;
     int operation;
     cout << "1-Battery" << endl << "2-Memory" << endl;
-    cout << "3-Network" << endl;
+    cout << "3-Network" << endl << "4-Other info" << endl;
     cin >> operation;
     cout << endl;
     switch(operation) {
@@ -28,7 +26,7 @@ int main() {
             systemStatus();
             break;
         default:
-            cout << "Operation not supported." << endl;
+            cout << "Operation not supported. More features soon." << endl;
             break;
     }
     return 0;
